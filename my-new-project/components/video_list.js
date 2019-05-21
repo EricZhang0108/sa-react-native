@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import Search from 'react-native-search-box';
 
@@ -87,6 +88,7 @@ class VideoList extends Component {
       youtubeSearch(this.state.query)
         .then((responseData) => {
           this.setState({
+            // eslint-disable-next-line react/no-access-state-in-setstate
             dataSource: this.state.dataSource.cloneWithRows(responseData),
             isLoading: false,
           });

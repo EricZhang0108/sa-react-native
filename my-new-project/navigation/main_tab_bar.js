@@ -4,6 +4,7 @@ import { View, Text } from 'react-native';
 import Ionicons from 'react-native-vector-icons/FontAwesome';
 import About from '../components/about';
 
+// eslint-disable-next-line no-unused-vars
 const AboutTab = (props) => {
   return <View style={{ flex: 1, justifyContent: 'center' }}><Text>about</Text></View>;
 };
